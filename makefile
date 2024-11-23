@@ -6,9 +6,13 @@
 folder:
 	@$(call OOPE_FOLDER_CREATE,./,test)
 
+#[Run Target]
+run:
+	@$(call OOPE_SHOW_RUN,./test)
+
 #[Clean Target]
 clean:
-	@$(call OOPE_FOLDER_REMOVE, test); $$null;
+	@$(call OOPE_FOLDER_REMOVE,test); $$null;
 	@$(call OOPE_SHOW_DONE);
 
 #[Test Target]
