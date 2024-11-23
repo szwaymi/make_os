@@ -1,9 +1,10 @@
 
 #[Configs]
-.PHONY: test all clean 
+.PHONY: test folder clean 
 
 #[All Target]
-all:
+folder:
+	@$(call OOPE_FOLDER_CREATE,./,test)
 
 #[Clean Target]
 clean:
